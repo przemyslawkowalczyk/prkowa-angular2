@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeroesComponent } from './heroes/heroes-component/heroes.component';
 import { HeroDetailComponent } from './heroes/hero-detail-component/hero-detail.component';
-import { DashboardComponent } from './dashboard-component/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'heroes',
     component: HeroesComponent
+  },
+  {
+    path: 'form',
+    component: FormComponent
   }
 ];
 

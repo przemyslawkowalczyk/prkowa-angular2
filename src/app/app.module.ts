@@ -13,18 +13,20 @@ import { AppComponent } from './app.component';
 
 import { HeroesComponent } from './heroes/heroes-component/heroes.component';
 import { HeroDetailComponent } from './heroes/hero-detail-component/hero-detail.component';
-import { DashboardComponent } from './dashboard-component/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { RevertDirective } from './directives/revert.directive';
+import { RevertPipe } from './pipes/revert.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
 
 const declarations: Array<any> = [
   AppComponent,
   HeroesComponent,
   HeroDetailComponent,
   DashboardComponent,
-  RevertDirective
+  RevertPipe,
+  HighlightDirective
 ];
 
 const imports: Array<any> = [

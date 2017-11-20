@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Hero } from '../shared/hero';
 import { HeroService } from '../shared/hero-service.service';
-import { RevertDirective } from '../../directives/revert.directive';
+
+import { HighlightDirective } from '../../directives/highlight.directive';
 
 @Component({
   selector: 'heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  providers: [ RevertDirective ]
+  providers: [ HighlightDirective ]
 })
 
 export class HeroesComponent implements OnInit {

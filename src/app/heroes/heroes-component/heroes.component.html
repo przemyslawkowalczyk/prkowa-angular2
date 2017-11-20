@@ -3,7 +3,7 @@
   <li *ngFor="let hero of heroes"
       [class.selected]="hero === selectedHero"
       (click)="onSelect(hero)">
-    <span class="badge" [appRevert]="hero.name"></span>
+    <span class="badge" appHighlight>{{ hero.name | revert }} </span>
   </li>
 </ul>
 <div *ngIf="selectedHero">
